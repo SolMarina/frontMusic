@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+🎶 Información de Bandas Musicales
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Requisitos
+Node.js (v14 o superior)
+npm
 
-## Available Scripts
+Instrucciones Backend:
+El backend está construido con Node.js y Express
+1. Clona el Repositorio
+git clone <URL-DEL-REPOSITORIO>
+cd <NOMBRE-DE-LA-CARPETA>
 
-In the project directory, you can run:
+2. Instala las dependencias:
+npm install
 
-### `npm start`
+3. Inicia el servidor:
+El backend se ejecutará en http://localhost:3001.
+Para correr el servidor ejecutar: npm run dev
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Instrucciones Front-end:
+El frontend está construido con React 
+1. Clona el Repositorio
+git clone <URL-DEL-REPOSITORIO>
+cd <NOMBRE-DE-LA-CARPETA>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Instala las dependencias:
+npm install
 
-### `npm test`
+3. Inicia la app:
+El frontend se abrirá en http://localhost:3000.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Uso:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Ingresa el nombre de una banda o artista y haz clic en "Buscar Canciones".
+- La aplicación mostrará una lista de canciones.
+- Para agregar una canción a favoritos, haz clic en "Agregar a Favoritos" y confirma la acción en: ok en diálogo de alerta. Al confirmar, el botón cambiará de color para indicar que la canción está en favoritos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

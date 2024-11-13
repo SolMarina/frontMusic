@@ -1,13 +1,154 @@
+/* Estilo oscuro similar a Apple Music */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #121212;
+  color: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #ffffff;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: #333;
+  color: #ffffff;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 12px 20px;
+  margin-top: 10px;
+  border: none;
+  background-color: #FA2D48;
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 10px auto;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #D1243A;
+  transform: scale(1.05);
+}
+
+/* Botón de Favoritos */
+button.favorite-btn {
+  background-color: #4CAF50;
+}
+
+button.favorite-btn:hover {
+  background-color: #45A049;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 8px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+th {
+  color: #FA2D48;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+td a {
+  color: #FA2D48;
+  text-decoration: none;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+td {
+  color: #DDDDDD;
+}
+
+.song-row:hover {
+  background-color: #1e1e1e;
+}
+
+.favorite {
+  background-color: #333333;
+}
+
+/* Estilos para pantallas móviles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  input, button {
+    font-size: 14px;
+    padding: 10px;
+    margin: 5px 0;
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  table, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    margin-bottom: 15px;
+  }
+
+  th {
+    display: none;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #333;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #FA2D48;
+    text-transform: uppercase;
+  }
 }
